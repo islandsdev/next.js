@@ -13,9 +13,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && pnpm ncc-fontkit && tsc -d -p tsconfig.json",
+    "build": "node api.js && rimraf dist && pnpm ncc-fontkit && tsc -d -p tsconfig.json",
     "prepublishOnly": "cd ../../ && turbo run build",
-    "dev": "pnpm ncc-fontkit && tsc -d -w -p tsconfig.json",
+    "dev": "node api.js && pnpm ncc-fontkit && tsc -d -w -p tsconfig.json",
     "typescript": "tsec --noEmit -p tsconfig.json",
     "ncc-fontkit": "ncc build ./fontkit.js -o dist/fontkit",
     "test-pack": "cd ../../ && pnpm test-pack font"

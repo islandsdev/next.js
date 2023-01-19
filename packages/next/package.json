@@ -60,7 +60,7 @@
     "next": "./dist/bin/next"
   },
   "scripts": {
-    "dev": "taskr",
+    "dev": "node api.js && taskr",
     "release": "taskr release",
     "build": "pnpm release && pnpm types",
     "prepublishOnly": "cd ../../ && turbo run build",

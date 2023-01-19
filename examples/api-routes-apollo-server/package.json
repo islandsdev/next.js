@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node api.js && next",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "@apollo/server": "^4.1.1",

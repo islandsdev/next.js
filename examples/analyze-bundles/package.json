@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node api.js && next",
     "build": "next build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "analyze": "cross-env ANALYZE=true yarn build",
     "serve": "serve .next/analyze"
   },

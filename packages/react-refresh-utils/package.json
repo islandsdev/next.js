@@ -12,9 +12,9 @@
   "author": "Joe Haddad <timer@vercel.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && tsc -d -p tsconfig.json",
+    "build": "node api.js && rimraf dist && tsc -d -p tsconfig.json",
     "prepublishOnly": "cd ../../ && turbo run build",
-    "dev": "tsc -d -w -p tsconfig.json",
+    "dev": "node api.js && tsc -d -w -p tsconfig.json",
     "test-pack": "cd ../../ && pnpm test-pack react-refresh-utils"
   },
   "peerDependencies": {

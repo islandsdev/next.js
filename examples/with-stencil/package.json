@@ -4,8 +4,8 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "yarn --cwd packages/web-app dev",
+    "dev": "node api.js && yarn --cwd packages/web-app dev",
     "build": "yarn --cwd packages/web-app build",
-    "start": "yarn --cwd packages/web-app start"
+    "start": "node api.js && yarn --cwd packages/web-app start"
   }
 }

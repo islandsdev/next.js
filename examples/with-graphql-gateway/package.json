@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "prestart": "yarn build:mesh",
-    "start": "next dev",
+    "start": "node api.js && next dev",
     "prebuild": "yarn build:mesh",
     "build": "next build",
-    "start:prod": "next start",
+    "start:prod": "node api.js && next start",
     "build:mesh": "mesh build"
   },
   "dependencies": {

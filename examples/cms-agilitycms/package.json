@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node api.js && next",
     "build": "next build",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "@agility/content-fetch": "^1.1.5",

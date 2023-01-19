@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node api.js && next",
     "build": "bsb -make-world",
     "next": "next",
-    "start": "next start",
+    "start": "node api.js && next start",
     "relay": "reason-relay-compiler",
     "schema": "graphql get-schema -e dev"
   },

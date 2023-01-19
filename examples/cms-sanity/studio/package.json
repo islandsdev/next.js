@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "npx @sanity/cli start",
+    "start": "node api.js && npx @sanity/cli start",
     "deploy": "npx @sanity/cli deploy",
     "cors:add": "npx @sanity/cli cors add",
     "prestart": "npm run env",

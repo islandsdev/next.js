@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nodemon",
+    "dev": "node api.js && nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/server.js"
+    "start": "node api.js && cross-env NODE_ENV=production node dist/server.js"
   },
   "dependencies": {
     "cross-env": "^7.0.3",

@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "node api.js && next",
+    "build": "node api.js && next build",
     "preexport": "npm run build",
     "export": "next export",
     "prestart": "npm run export",
-    "start": "serve out",
+    "start": "node api.js && serve out",
     "lint": "next lint"
   },
   "dependencies": {

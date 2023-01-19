@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "yarn next dev",
-    "build": "yarn next build",
-    "start": "yarn next start"
+    "dev": "node api.js && yarn next dev",
+    "build": "node api.js && yarn next build",
+    "start": "node api.js && yarn next start"
   },
   "dependencies": {
     "react": "*",

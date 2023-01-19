@@ -22,11 +22,11 @@
     "types"
   ],
   "scripts": {
-    "dev": "ncc build ./index.ts -w -o dist/",
+    "dev": "node api.js && ncc build ./index.ts -w -o dist/",
     "prerelease": "rimraf ./dist/",
     "types": "tsc index.ts --declaration --emitDeclarationOnly --declarationDir types --esModuleInterop",
     "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "build": "pnpm release && pnpm types",
+    "build": "node api.js && pnpm release && pnpm types",
     "prepublishOnly": "cd ../../ && turbo run build",
     "test-pack": "cd ../../ && pnpm test-pack next-env"
   },

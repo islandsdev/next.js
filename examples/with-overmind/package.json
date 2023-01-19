@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next -p 1234",
+    "dev": "node api.js && next -p 1234",
     "build": "next build",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "next": "latest",

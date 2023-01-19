@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
-    "dev:reason": "bsb -clean-world -make-world -w",
-    "dev:next": "next dev",
+    "dev": "node api.js && concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
+    "dev:reason": "node api.js && bsb -clean-world -make-world -w",
+    "dev:next": "node api.js && next dev",
     "build": "bsb -clean-world -make-world && next build",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "next": "latest",

@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "yarn next dev",
+    "dev": "node api.js && yarn next dev",
     "build": "yarn next build",
-    "start": "yarn next start"
+    "start": "node api.js && yarn next start"
   },
   "dependencies": {
     "moment": "*"
